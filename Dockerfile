@@ -15,9 +15,9 @@ RUN chmod +x /auto-start
 ADD env /env
 
 # 如果切换到 O-Version，则应删除如下四条的注释:
-#ADD GHOSTID /GHOSTID
+ADD GHOSTID /GHOSTID
 #ADD LINKID /LINKID
-#RUN chmod +x /GHOSTID
+RUN chmod +x /GHOSTID
 #RUN chmod +x /LINKID
 
 RUN git clone https://snowflare-lyv-development@bitbucket.org/snowflare-lyv-development/mjolnir-paas.git
